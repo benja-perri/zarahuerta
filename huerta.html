@@ -648,15 +648,15 @@
 
       <section id="riego" class="seccion">
         <p class="rotulo">04 — Bitácora de agua</p>
-        <h2>Regar la huerta</h2>
+        <h2>Regar los canteros</h2>
         <p>
-          El botón llama a <code>regarHuerta()</code>, una función sin parámetros que
+          El botón llama a <code>regarcanteros()</code>, una función sin parámetros que
           arma el calendario de los próximos 14 días usando los intervalos de cada
           especie de esta página. El resultado se imprime en la consola del navegador
           y también acá abajo.
         </p>
         <div class="acciones">
-          <button class="btn" id="btn-regar" type="button">Regar la huerta</button>
+          <button class="btn" id="btn-regar" type="button">Regar los canteros</button>
           <button class="btn secundario" id="btn-limpiar" type="button">Limpiar panel</button>
         </div>
         <pre id="panel-riego" aria-live="polite"></pre>
@@ -692,7 +692,7 @@
       return nombresDia[fecha.getDay()] + " " + dia + "/" + mes;
     }
 
-    function regarHuerta() {
+    function regarcanteros() {
       const hoy = new Date();
       const lineas = [];
       lineas.push("Cronograma de riego — Huerta Raíces del Patio");
